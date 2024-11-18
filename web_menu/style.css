@@ -1,0 +1,99 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    background-image: radial-gradient(#1b529e 1px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -19px -19px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    width: 10px;
+    height: 30px;
+    background: #1b529e;
+    margin: 4px;
+}
+
+#header_grid, #footer_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    /* background: white; */
+}
+
+#header_grid {
+    padding-top: 10px;
+}
+
+#footer_grid {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    z-index: 10; /* Ensures it stays above other content */
+    width: 100%;
+    
+}
+
+.title {
+    text-align: center;
+    /* color: #1b529e; */
+    margin: 20px 0; /* Adds spacing around title */
+    font-size: 2em;
+    /* background: white; */
+}
+
+.para {
+    /* color: #1b529e; */
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px; /* Adds spacing above footer */
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: white; */
+}
+.container { /* Add this class to wrap your buttons */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center horizontally */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+button, a {
+    background: #1b529e;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    display: flex; /* Ensure flex for button alignment */
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Add margin between buttons */
+    padding: 6px;
+    border-radius: 3px;
+}
+a:hover{
+    background: #1b529e85;
+    color: rgba(249, 249, 249, 0.533);
+}
+.food_menu, .drink_menu {
+    margin: 30px 0; /* Add vertical margin for separation */
+    display: flex; /* Maintain flex for menu alignment */
+    align-items: center;
+    justify-content: center;
+}
+h1.menu{
+    font-size: 20px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
